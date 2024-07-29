@@ -1,2 +1,2 @@
 # EKS-Terraform
-EKS terraform template 
+EKS terraform template to create VPC, Subnets, IAM roles and EKS cluster.
