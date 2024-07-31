@@ -7,7 +7,7 @@ resource "aws_eip" "nat" {
 }
 
 resource "aws_nat_gateway" "nat" {
-  allocation_id = aws_vpc.main.id
+  allocation_id = aws_eip.nat.id
   subnet_id     = aws_subnet.public-subnet-1.id
 
   tags = {
